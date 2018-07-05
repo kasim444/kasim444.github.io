@@ -10,6 +10,12 @@ section {
     /* font-family: 'Lato', sans-serif; */
 }
 
+.centered {
+    float: none;
+    margin: 0 auto;
+    padding-top: 22px;
+}
+
 .page-navbar.navbar {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -210,12 +216,11 @@ section {
 }
 
 .page-footer .social-icons a {
+    border-radius: 100%;
     font-size: 18px;
     margin: 0 3px;
     color: #ffffff;
-    border: 1px solid;
     opacity: 0.9;
-    border-radius: 50%;
     width: 36px;
     display: inline-block;
     height: 36px;
