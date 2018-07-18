@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Animate Css-->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
 </head>
 
 <body>
@@ -44,11 +46,11 @@
             </div>
         </div>
     </nav>
-    <main class="page cv-page">
+    <main class="page cv-page wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
         <section class="cv-block block-intro border-bottom">
             <div class="container">
                 <div class="avatar">
-                    <img class="img-fluid rounded-circle" src="assets/img/avatar.jpg">
+                    <img class="wow pulse img-fluid rounded-circle" data-wow-delay="1s" src="assets/img/avatar.jpg">
                 </div>
                 <p>Hello! I am <strong>Kasim ŞEN</strong>. I work as interface and front end developer. I have passion for pixel perfect, minimal and easy to use interfaces.</p>
                 <a href="#my_portfolio" class="btn btn-outline-primary">My Portfolio</a>
@@ -164,43 +166,54 @@
                         <i class="fas fa-headphones"></i> Listen to music.
                     </p>
                 </div>
-                <div class="hobbies group" id="my_portfolio">
+                <div class="hobbies group wow pulse" id="my_portfolio" data-wow-delay="4.5s">
                     <h2 class="text-center top-pad">My Portfolio</h2>
                     <p class="text-center text-muted">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-md-4 wow pulse" data-wow-delay="1s">
+                                <h4 class="center">Ay San</h4>
+                                <a href="http://aysanarusekipman.com" target="_blank">
+                                    <img src="assets/img/Aysan-ar-us.png" class="portfolio" alt="AYSAN">
+                                </a>
+                            </div>
+                            <div class="col-md-4 wow pulse" data-wow-delay="1.5s">
+                                <h4 class="center">Tatlı Ekşi Limonatam</h4>
+                                <a href="http://tatlieksilimonatam.com" target="_blank">
+                                    <img src="assets/img/tatlieksilimonatam.png" class="portfolio" alt="Tatlı Ekşi Limonatam">
+                                </a>
+                            </div>
+                            <div class="col-4 wow pulse" data-wow-delay="2s">
                                 <h4 class="center">Frdlift Asansör</h4>
                                 <a href="http://frdlift.com/" target="_blank">
                                     <img src="assets/img/Frdlift.png" class="portfolio" alt="Frd Lift">
                                 </a>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 wow pulse" data-wow-delay="2.5s">
                                 <h4 class="center">Tmt Bilişim</h4>
                                 <a href="http://www.tmtbilisim.com.tr/" target="_blank">
                                     <img src="assets/img/Tmtbilisim.png" class="portfolio" alt="Tmt Bilişim">
                                 </a>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 wow pulse" data-wow-delay="3s">
                                 <h4 class="center">Mahpeyker</h4>
                                 <a href="http://mahpeykerteknoloji.net/" target="_blank">
                                     <img src="assets/img/Mahpeyker.png" class="portfolio" alt="Mahpeyker Teknoloji">
                                 </a>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 centered">
+                            <div class="col-4 wow pulse" data-wow-delay="3.5s">
                                 <h4 class="center">Royal Danışmanlık</h4>
                                 <a href="royaldanismanlik.net" target="_blank">
                                     <img src="assets/img/royaldanismanlik.png" class="portfolio" alt="Royal Danışmanlık">
                                 </a>
                             </div>
-                            <div class="col-md-4 centered">
+                            <div class="col-4 centered wow pulse" data-wow-delay="4s">
                                 <h4 class="center">Smart Cafe</h4>
                                 <a href="https://github.com/kasim444/Smart-Cafe" target="_blank">
                                     <img src="assets/img/smart-cafe.png" class="portfolio" alt="Smart Cafe">
                                 </a>
                             </div>
                         </div>
+
                     </p>
                 </div>
                 <div class="hobbies group" id="contact">
@@ -262,6 +275,11 @@
             </div>
         </footer>
     </main>
+
+    <script src="assets/js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
