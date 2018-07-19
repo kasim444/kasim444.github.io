@@ -251,10 +251,9 @@ section {
 }
 
 .text-linear {
-    background: linear-gradient(to bottom, rgb(0, 255, 255), rgb(54, 51, 209) 50%);
+    background: linear-gradient(to top left, #28a745, #007bff 50%);
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 100px;
 }
 
 @media (min-width: 768px) {
